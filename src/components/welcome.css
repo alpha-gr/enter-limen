@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+svg {
+	font-family: "Audiowide", cursive !important;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	filter: url(#screen-noise);
+}
+
+svg text {
+	text-transform: uppercase;
+	fill: rgb(0, 255, 13);
+	font-size: 50px;
+	filter: url(#Glow);
+}
+
+.welcome {
+
+	--background-color: rgb(0, 195, 255);
+	--gradient-color-1: rgb(0, 195, 255);
+	--gradient-color-2: rgb(0, 119, 255);
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		var(--gradient-color-1) 0%,
+		var(--gradient-color-2) 100%,
+		var(--gradient-color-2) 100%,
+		var(--gradient-color-1) 100%
+	  );
+	/* background-color: var(--background-color); */
+	/* cursor: none; */
+}

@@ -1,7 +1,7 @@
 {
   "name": "enter-limen",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "https://alpha-gr.github.io/enter-limen",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
