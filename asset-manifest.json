@@ -1,16 +1,34 @@
 {
   "files": {
-    "main.css": "/enter-limen/static/css/main.f855e6bc.css",
-    "main.js": "/enter-limen/static/js/main.076ab4d2.js",
+    "main.css": "/enter-limen/static/css/main.b1944233.css",
+    "main.js": "/enter-limen/static/js/main.94b0d073.js",
     "static/js/453.939e4a2c.chunk.js": "/enter-limen/static/js/453.939e4a2c.chunk.js",
-    "static/media/logo.svg": "/enter-limen/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/LOOP_ACCESSO.wav": "/enter-limen/static/media/LOOP_ACCESSO.01808dcf7aa04c3baafb.wav",
+    "static/media/ENTRATA.mp4": "/enter-limen/static/media/ENTRATA.0b65ef838d4f1ddc22c4.mp4",
+    "static/media/GAB1.mp4": "/enter-limen/static/media/GAB1.4ff3c2bcfe022e4a8b59.mp4",
+    "static/media/GAB2.mp4": "/enter-limen/static/media/GAB2.67b06990ba5189f55523.mp4",
+    "static/media/TOMM1.mp4": "/enter-limen/static/media/TOMM1.64439d772d2a51ff61d3.mp4",
+    "static/media/FRA1.mp4": "/enter-limen/static/media/FRA1.9dfd88271619f95b79b5.mp4",
+    "static/media/TOMM2.mp4": "/enter-limen/static/media/TOMM2.a3c7a1eace1c019a68f9.mp4",
+    "static/media/FRA2.mp4": "/enter-limen/static/media/FRA2.f376d20a5aadca072648.mp4",
+    "static/media/CHIA1.mp4": "/enter-limen/static/media/CHIA1.c9049d64be71b395b848.mp4",
+    "static/media/CHIA2.mp4": "/enter-limen/static/media/CHIA2.6a3736cbe6e3a41cbefb.mp4",
+    "static/media/LOOP_SCHERMATA.wav": "/enter-limen/static/media/LOOP_SCHERMATA.8dd59728a28c7da85fe4.wav",
+    "static/media/TOMM1.png": "/enter-limen/static/media/TOMM1.5237a37d309cd0638fda.png",
+    "static/media/FRA1.png": "/enter-limen/static/media/FRA1.c18eabcfdbac07172437.png",
+    "static/media/CHIA2.png": "/enter-limen/static/media/CHIA2.f327d765b219a67c3203.png",
+    "static/media/TOMM2.png": "/enter-limen/static/media/TOMM2.5346bfe5a237c8c8b416.png",
+    "static/media/GAB2.png": "/enter-limen/static/media/GAB2.c6720124b673a998841c.png",
+    "static/media/FRA2.png": "/enter-limen/static/media/FRA2.2ed0e71fa17bbe92c1a0.png",
+    "static/media/CHIA1.png": "/enter-limen/static/media/CHIA1.e18c2aa1454e8dea4d17.png",
+    "static/media/GAB1.png": "/enter-limen/static/media/GAB1.ae4a15fa21d292f1344e.png",
     "index.html": "/enter-limen/index.html",
-    "main.f855e6bc.css.map": "/enter-limen/static/css/main.f855e6bc.css.map",
-    "main.076ab4d2.js.map": "/enter-limen/static/js/main.076ab4d2.js.map",
+    "main.b1944233.css.map": "/enter-limen/static/css/main.b1944233.css.map",
+    "main.94b0d073.js.map": "/enter-limen/static/js/main.94b0d073.js.map",
     "453.939e4a2c.chunk.js.map": "/enter-limen/static/js/453.939e4a2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.076ab4d2.js"
+    "static/css/main.b1944233.css",
+    "static/js/main.94b0d073.js"
   ]
 }
