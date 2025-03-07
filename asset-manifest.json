@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/enter-limen/static/css/main.b1944233.css",
-    "main.js": "/enter-limen/static/js/main.94b0d073.js",
+    "main.css": "/enter-limen/static/css/main.5c7ded1f.css",
+    "main.js": "/enter-limen/static/js/main.99f9e859.js",
     "static/js/453.939e4a2c.chunk.js": "/enter-limen/static/js/453.939e4a2c.chunk.js",
     "static/media/LOOP_ACCESSO.wav": "/enter-limen/static/media/LOOP_ACCESSO.01808dcf7aa04c3baafb.wav",
     "static/media/ENTRATA.mp4": "/enter-limen/static/media/ENTRATA.0b65ef838d4f1ddc22c4.mp4",
@@ -23,12 +23,12 @@
     "static/media/CHIA1.png": "/enter-limen/static/media/CHIA1.e18c2aa1454e8dea4d17.png",
     "static/media/GAB1.png": "/enter-limen/static/media/GAB1.ae4a15fa21d292f1344e.png",
     "index.html": "/enter-limen/index.html",
-    "main.b1944233.css.map": "/enter-limen/static/css/main.b1944233.css.map",
-    "main.94b0d073.js.map": "/enter-limen/static/js/main.94b0d073.js.map",
+    "main.5c7ded1f.css.map": "/enter-limen/static/css/main.5c7ded1f.css.map",
+    "main.99f9e859.js.map": "/enter-limen/static/js/main.99f9e859.js.map",
     "453.939e4a2c.chunk.js.map": "/enter-limen/static/js/453.939e4a2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1944233.css",
-    "static/js/main.94b0d073.js"
+    "static/css/main.5c7ded1f.css",
+    "static/js/main.99f9e859.js"
   ]
 }
