@@ -69,6 +69,7 @@ export default function Home(){
     };
 
     switchAudio();
+    //eslint-disable-next-line
   }, [welcomeScreen, selectedScene]);
 
   // selezione scena
@@ -87,7 +88,7 @@ export default function Home(){
   }
 
 
-  // gestione welcomescreen e activity flag
+  // gestione welcomescreen
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent|MouseEvent) => {
       if (welcomeScreen) {
@@ -105,6 +106,14 @@ export default function Home(){
       window.removeEventListener('click', handleKeyDown);
     };
   }, [welcomeScreen]);
+
+  // nascondo barra degli indirizzi su mobile
+  useEffect(() => {
+      setTimeout(() => {
+        window.scrollTo(0, 1);
+      }, 100);
+  },
+  []);
 
   return (
     <div className="Home" style={{ margin: '0px', padding: '0px', overflow: 'hidden', height: '100%', width: '100%',  }}>

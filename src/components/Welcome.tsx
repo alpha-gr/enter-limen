@@ -20,7 +20,7 @@ export const Welcome = () => {
                         </feDisplacementMap>
                     </filter> */}
                     <filter id="Glow" x="-30%" y="-30%" width="160%" height="160%">
-                        <feGaussianBlur stdDeviation="6 2" result="glow" />
+                        <feGaussianBlur stdDeviation="1" result="glow" />
                         <feMerge>
                             <feMergeNode in="glow" />
                             <feMergeNode in="SourceGraphic" />

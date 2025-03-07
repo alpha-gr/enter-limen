@@ -5,6 +5,7 @@
   margin: 0 auto;
   perspective: 360px;
   perspective-origin: 50% 50%;
+  overflow: hidden;
 }
 
 body {
