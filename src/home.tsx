@@ -5,6 +5,7 @@ import type { Scene } from './types/Scene';
 import styles from './home.module.css'
 import Background from './components/Background';
 import { Welcome } from "./components/Welcome";
+import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
 import welcomeScreenSound from './assets/audio/LOOP_ACCESSO.wav';
 import selectionSound from './assets/audio/LOOP_SCHERMATA.wav';
@@ -36,17 +37,31 @@ const fadeOut = (audio: HTMLAudioElement): Promise<void> => {
 const fadeIn = (audio: HTMLAudioElement): void => {
   audio.muted = true;
   audio.play().catch((error) => console.error('Errore nel riprodurre l\'audio:', error))
-  .then(() => {
-    audio.muted = false;
-    audio.volume = 1;
-  });
+    .then(() => {
+      audio.muted = false;
+      audio.volume = 1;
+    });
 };
 
-export default function Home(){
+export default function Home() {
   const [selectedScene, setSelectedScene] = useState<Scene | null>(null);
   const [welcomeScreen, setWelcomeScreen] = useState<boolean>(true);
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
   const [isFadingOut, setIsFadingOut] = useState(false);
+  const handle = useFullScreenHandle();
+
+  const fullScreenHandle = () => {
+
+    // only on mobile devices
+    if (window.innerWidth > 768) return;
+
+    if (handle.active) {
+      handle.exit();
+    } else {
+      handle.enter();
+    }
+  }
+
 
 
   useEffect(() => {
@@ -87,12 +102,12 @@ export default function Home(){
     }
   }
 
-
   // gestione welcomescreen
   useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent|MouseEvent) => {
+    const handleKeyDown = (event: KeyboardEvent | MouseEvent) => {
       if (welcomeScreen) {
-        setSelectedScene(welcomeScene)
+        setSelectedScene(welcomeScene);
+        fullScreenHandle();
         setTimeout(() => {
           setWelcomeScreen(false);
         }, 1000); // Tempo di attesa per il fade-in
@@ -107,34 +122,28 @@ export default function Home(){
     };
   }, [welcomeScreen]);
 
-  // nascondo barra degli indirizzi su mobile
-  useEffect(() => {
-      setTimeout(() => {
-        window.scrollTo(0, 1);
-      }, 100);
-  },
-  []);
-
   return (
-    <div className="Home" style={{ margin: '0px', padding: '0px', overflow: 'hidden', height: '100%', width: '100%',  }}>
-      <RotateScreenPrompt />
-      {welcomeScreen &&
-        <Welcome />
-      }
-      {selectedScene && (
-        <SceneViewer scene={selectedScene} onBack={() => setSelectedScene(null)} />
-      )}
-      {!welcomeScreen &&
-        <div className={styles.maincontainer + (isFadingOut ? ' ' + styles.fadeOut : '')
-        }>
-          <Background />
-          <SceneSelector onSelect={onSceneSelect} />
-        </div>
-      }
-      {isFadingOut &&
-        <div className={styles.overlay} />
-      }
+    <FullScreen handle={handle}>
+      <div className="Home" style={{ margin: '0px', padding: '0px', overflow: 'hidden', height: '100%', width: '100%', }}>
+        <RotateScreenPrompt />
+        {welcomeScreen &&
+          <Welcome />
+        }
+        {selectedScene && (
+          <SceneViewer scene={selectedScene} onBack={() => setSelectedScene(null)} fullScreenHandle={fullScreenHandle} />
+        )}
+        {!welcomeScreen &&
+          <div className={styles.maincontainer + (isFadingOut ? ' ' + styles.fadeOut : '')
+          }>
+            <Background />
+            <SceneSelector onSelect={onSceneSelect} fullScreenHandle={fullScreenHandle} />
+          </div>
+        }
+        {isFadingOut &&
+          <div className={styles.overlay} />
+        }
 
-    </div>
+      </div>
+    </FullScreen>
   );
 };

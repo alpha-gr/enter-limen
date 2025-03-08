@@ -6,9 +6,10 @@ interface SceneViewerProps {
   scene: Scene;
   onBack: () => void;
   loop?: boolean;
+  fullScreenHandle: any;
 }
 
-const SceneViewer: React.FC<SceneViewerProps> = ({ scene, onBack, loop }) => {
+const SceneViewer: React.FC<SceneViewerProps> = ({ scene, onBack, loop, fullScreenHandle }) => {
   const [isFadingOut, setIsFadingOut] = useState(false);
   const [isFadingIn, setIsFadingIn] = useState(false);
 

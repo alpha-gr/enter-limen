@@ -2,8 +2,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.88);
     z-index: 2;
@@ -13,26 +13,36 @@
   /* Wrapper per il video: centrato e con dimensioni relative */
 .videoWrapper {
   position: absolute;
-  width: 1920px;
-  height: 1080px;
+  /* width: 1920px;
+  height: 1080px; */
   
   /* Con left, right, top e bottom a 0 e margin auto l'elemento si centra */
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: 1vw;
   
   /* Ridimensiona il wrapper se la viewport è inferiore alle dimensioni originali */
   max-width: 100%;
   max-height: 100%;
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 780px) {
+  .videoWrapper{
+    margin: 0 !important;
+  }
+  .container{
+    background-color: black !important;
+  }
 }
   
 video {
+  position: relative;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 1%;
+  object-fit: contain;
 }
   
   .fadeOut {
@@ -50,12 +60,12 @@ video {
 
   .backButton {
     position: absolute;
-    top: 0.1vw;
-    right: 0.1vw;
+    top: 10px;
+    right: 10px;
     z-index: 10;
     
-    width: 3vw;
-    height: 3vw;
+    width: 10px;
+    height: 10px;
     display: flex;
     justify-content: center;
     align-items: center;

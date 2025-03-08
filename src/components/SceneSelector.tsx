@@ -22,6 +22,7 @@ import image7 from '../assets/images/CHIA2.png'
 
 interface SceneSelectorProps {
   onSelect: (scene: Scene) => void;
+  fullScreenHandle: any;
 }
 
 const exitScene: Scene = { id: 8, name: 'Exit', src: '', thumbnail: '' };   // to exit and go back to the home screen
@@ -37,7 +38,7 @@ const scenes: Scene[] = [
   { id: 8, name: '5__01.mp4', src: video7, thumbnail: image7 },
 ];
 
-const SceneSelector: React.FC<SceneSelectorProps> = ({ onSelect }) => {
+const SceneSelector: React.FC<SceneSelectorProps> = ({ onSelect, fullScreenHandle }) => {
 
   return (
     <div className={styles.container}>
@@ -46,7 +47,7 @@ const SceneSelector: React.FC<SceneSelectorProps> = ({ onSelect }) => {
           <button
             key={scene.id}
             className={styles.button}
-            onClick={() => { onSelect(scene) }}
+            onClick={() => { onSelect(scene); fullScreenHandle(); }}
           >
             <img
               className={styles.image}
