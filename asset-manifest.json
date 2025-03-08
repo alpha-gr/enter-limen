@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/enter-limen/static/css/main.d69adbed.css",
+    "main.css": "/enter-limen/static/css/main.a1a084c4.css",
     "main.js": "/enter-limen/static/js/main.b3c2d10c.js",
     "static/js/453.939e4a2c.chunk.js": "/enter-limen/static/js/453.939e4a2c.chunk.js",
     "static/media/LOOP_ACCESSO.wav": "/enter-limen/static/media/LOOP_ACCESSO.01808dcf7aa04c3baafb.wav",
@@ -23,12 +23,12 @@
     "static/media/CHIA1.png": "/enter-limen/static/media/CHIA1.e18c2aa1454e8dea4d17.png",
     "static/media/GAB1.png": "/enter-limen/static/media/GAB1.ae4a15fa21d292f1344e.png",
     "index.html": "/enter-limen/index.html",
-    "main.d69adbed.css.map": "/enter-limen/static/css/main.d69adbed.css.map",
+    "main.a1a084c4.css.map": "/enter-limen/static/css/main.a1a084c4.css.map",
     "main.b3c2d10c.js.map": "/enter-limen/static/js/main.b3c2d10c.js.map",
     "453.939e4a2c.chunk.js.map": "/enter-limen/static/js/453.939e4a2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d69adbed.css",
+    "static/css/main.a1a084c4.css",
     "static/js/main.b3c2d10c.js"
   ]
 }
