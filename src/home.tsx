@@ -49,11 +49,12 @@ export default function Home() {
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
   const [isFadingOut, setIsFadingOut] = useState(false);
   const handle = useFullScreenHandle();
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
   const fullScreenHandle = () => {
 
     // only on mobile devices
-    if (window.innerWidth > 768) return;
+    if (window.innerWidth > 768 || isIOS) return;
 
     if (handle.active) {
       handle.exit();

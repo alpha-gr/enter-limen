@@ -27,14 +27,29 @@ export const Welcome = () => {
                         </feMerge>
                     </filter>
 
-                    <pattern id="Grid" x="0" y="0" width="0.2" height="0.2">
+                    {/* <pattern id="Grid" x="0" y="0" width="0.2" height="0.2">
                         <rect x="0" y="0" width="100px" height="100px" stroke='yellow' fill='transparent' strokeWidth='2' />
                         <rect x="2" y="0" width="100px" height="100px" stroke='blue' fill='transparent' strokeWidth='2' />
-                        <animateTransform attributeType="xml" attributeName="patternTransform" type="translate" values="0,0;60,40" dur="5s" repeatCount="indefinite" />
+                        <animateTransform attributeType="XML" attributeName="patternTransform" type="translate" values="0 0;60 40" dur="5s" repeatCount="indefinite" />
+                    </pattern> */}
+
+                    <pattern
+                        id="Grid"
+                        x="0" y="0" width="0.2" height="0.2"
+                        patternTransform="translate(0 0)">
+                        <rect x="0" y="0" width="100" height="100" stroke="yellow" fill="transparent" strokeWidth="2" />
+                        <rect x="2" y="0" width="100" height="100" stroke="blue" fill="transparent" strokeWidth="2" />
+                        <animateTransform
+                            attributeType="XML"
+                            attributeName="patternTransform"
+                            type="translate"
+                            values="0 0;60 40"
+                            dur="5s"
+                            repeatCount="indefinite" />
                     </pattern>
                 </defs>
-                <rect height="100%" width="100%" fill="url(#Grid)" filter="url(#Glow)" />
-                <text x="50%" y="50%" textAnchor="middle">
+                <rect height="100%" width="100%" fill="url(#Grid)" />
+                <text x="50%" y="50%" textAnchor="middle" filter="url(#Glow)">
                     <tspan x="50%" dy="1px" style={{ fontSize: '20px' }}>
                         ENTER: /LIMEN
                     </tspan>
@@ -42,6 +57,7 @@ export const Welcome = () => {
                         clicca sullo schermo o premi un tasto per entrare
                     </tspan>
                 </text>
+
 
                 {/* <animateTransform attributeType="xml" attributeName="transform" type="translate" values="0,0;0,3;0,-2;0,0;0,5;0,0;0,-3" dur="2s" repeatCount="indefinite" /> */}
             </svg>

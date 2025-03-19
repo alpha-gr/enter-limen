@@ -5,7 +5,6 @@ svg {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	filter: url(#screen-noise);
 }
 
 svg text {
@@ -32,4 +31,6 @@ svg text {
 	  );
 	/* background-color: var(--background-color); */
 	/* cursor: none; */
+
+
 }
